@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE library SYSTEM "library.dtd">
+<library >
+    <location>
+
+    </location>
+
+    <description>
+        <![CDATA[
+			int num1=3;
+			int num2=5;
+				if( num1 > num2)
+					cout<<"number one greater than number 2"<<endln;
+				else if (num1 < num2)
+					cout<<"number one less than number 2"<<endln;
+				else
+					cout<<"number one equals number 2"<<endln;
+
+		]]>
+
+
+    </description>
+
+    <librarian name="aaaa"/>
+
+
+    <book ISBN="12E3" preface="preface of the book">
+        <title>
+            book title...
+        </title>
+
+        <author>
+
+            author name..
+
+        </author>
+
+        <part>
+            <title>
+                part title..
+            </title>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+        </part>
+
+        <part>
+            <title>
+                part title..
+            </title>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+        </part>
+
+        <part>
+            <title>
+                part title..
+            </title>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+        </part>
+        <copyRight >&COPYRIGHT;</copyRight>
+    </book>
+
+    <book ISBN="12E3" preface="preface of the book">
+        <title>
+            book title...
+        </title>
+
+        <author>
+
+            author name..
+
+        </author>
+
+        <part>
+            <title>
+                part title..
+            </title>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+        </part>
+
+        <part>
+            <title>
+                part title..
+            </title>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+        </part>
+
+        <part>
+            <title>
+                part title..
+            </title>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+            <chapter>
+                <title>
+                    title of the book..
+                </title>
+                <summary>
+                    summary of the book.
+                </summary>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+                <section>
+                    <paragraph>
+                        content of the book
+                    </paragraph>
+                </section>
+            </chapter>
+
+        </part>
+
+    </book>
+
+</library>

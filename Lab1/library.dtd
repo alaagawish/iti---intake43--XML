@@ -1,0 +1,18 @@
+<!ENTITY COPYRIGHT "Copyright 2000">
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT librarian EMPTY >
+<!ATTLIST librarian name CDATA "aa">
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA) >
+<!ELEMENT summary  (#PCDATA)>
+<!ELEMENT paragraph  (#PCDATA)>
+<!ELEMENT section (paragraph)+>
+<!ELEMENT chapter (title,summary,section+)>
+<!ELEMENT part (title,chapter+)>
+<!ELEMENT book (title,author,part+,copyRight?)>
+<!ELEMENT location (#PCDATA)>
+<!ATTLIST book ISBN CDATA #REQUIRED>
+<!ATTLIST book preface CDATA #IMPLIED>
+<!ATTLIST copyRight year (1999|2000) "2000">
+<!ELEMENT copyRight (#PCDATA)>
+<!ELEMENT library (location,description,librarian,book+)>
