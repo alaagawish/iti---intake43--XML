@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://jets.iti.gov.eg/xml/weekdays"
+        xmlns="https://jets.iti.gov.eg/xml/weekdays"
+        elementFormDefault="qualified">
+
+
+    <xs:simpleType name="dayByName">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Saturday"/>
+            <xs:enumeration value="Sunday"/>
+            <xs:enumeration value="Monday"/>
+            <xs:enumeration value="Tuesday"/>
+            <xs:enumeration value="Wednesday"/>
+            <xs:enumeration value="Thursday"/>
+
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="dayByNumber">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="7"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:element name="weekDays">
+        <xs:simpleType>
+            <xs:union memberTypes="dayByName dayByNumber"/>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

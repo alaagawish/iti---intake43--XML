@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://jets.iti.gov.eg/xml/bookstore"
+        xmlns="https://jets.iti.gov.eg/xml/bookstore"
+        elementFormDefault="qualified">
+
+    <xs:element name="BookStore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Book" type="Book" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+
+    <xs:complexType name="Book">
+        <xs:sequence>
+            <xs:element name="Title" type="Title"/>
+            <xs:element name="Author" type="Author"/>
+            <xs:element name="Date" type="Date"/>
+            <xs:element name="ISBN" type="ISBN"/>
+            <xs:element name="Publisher" type="Publisher"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="Publisher">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="ISBN">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Date">
+        <xs:simpleContent>
+            <xs:extension base="xs:date">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Author">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Title">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>
+
+
+        <!--<!ELEMENT BookStore (Book)+>-->
+        <!--<!ELEMENT Book (Title, Author, Date, ISBN, Publisher)>-->
+        <!--<!ELEMENT Title (#PCDATA)>-->
+        <!--<!ELEMENT Author (#PCDATA)>-->
+        <!--<!ELEMENT Date (#PCDATA)>-->
+        <!--<!ELEMENT ISBN (#PCDATA)>-->
+        <!--<!ELEMENT Publisher (#PCDATA)>-->

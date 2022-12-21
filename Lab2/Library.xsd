@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://jets.iti.gov.eg/xml/library"
+        xmlns="https://jets.iti.gov.eg/xml/library"
+        elementFormDefault="qualified">
+
+    <xs:element name="Library">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="location" type="location"/>
+                <xs:element name="description" type="description"/>
+                <xs:element name="librarian" type="librarian"/>
+                <xs:element name="book" type="Book" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+
+    <xs:complexType name="Book">
+        <xs:sequence>
+            <xs:element name="title" type="Title"/>
+            <xs:element name="author" type="Author"/>
+            <xs:element name="part" type="Part" maxOccurs="unbounded"/>
+            <xs:element name="copyRights" type="copyRight" maxOccurs="1" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="bookattrgroup"/>
+    </xs:complexType>
+
+
+    <xs:complexType name="Section">
+        <xs:sequence>
+            <xs:element name="paragraph" type="Paragraph" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="location">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="description">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="librarian">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Title">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="Chapter">
+        <xs:sequence>
+            <xs:element name="title" type="Title"/>
+            <xs:element name="summary" type="Summary"/>
+            <xs:element name="section" type="Section" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="Author">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="Part">
+        <xs:sequence>
+            <xs:element name="title" type="Title"/>
+            <xs:element name="chapter" type="Chapter" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="Summary">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="Paragraph">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Location">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="copyRight">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="Year" type="xs:date"/>
+            </xs:extension>
+
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:attributeGroup name="bookattrgroup">
+        <xs:attribute name="ISBN" type="xs:string"/>
+        <xs:attribute name="Preface" type="xs:string"/>
+    </xs:attributeGroup>
+
+</xs:schema>
+

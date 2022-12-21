@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://jets.iti.gov.eg/xml/bookstore"
+        xmlns="https://jets.iti.gov.eg/xml/bookstore"
+        elementFormDefault="qualified">
+
+    <xs:element name="BookStore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Book" type="Book" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+
+    <xs:complexType name="Book">
+        <xs:sequence>
+            <xs:element name="Title" type="Title"/>
+            <xs:element name="Author" type="Author"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="bookattrgroup"/>
+    </xs:complexType>
+
+    <xs:complexType name="Author">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Title">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:attributeGroup name="bookattrgroup">
+        <xs:attribute name="Category" type="xs:string" default="fiction"/>
+        <xs:attribute name="InStock" type="xs:boolean" default="false"/>
+    </xs:attributeGroup>
+
+</xs:schema>
+
+
+
+<!--<!ELEMENT BookStore (Book+)>-->
+<!--<!ELEMENT Book (Title, Author)>-->
+<!--<!ATTLIST Book Category (science | fiction) “fiction”-->
+<!--        InStock (true | false) “false”>-->
+<!--<!ELEMENT Title (#PCDATA)>-->
+<!--<!ELEMENT Author (#PCDATA)>-->

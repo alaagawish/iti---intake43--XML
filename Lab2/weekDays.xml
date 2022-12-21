@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<weekDays
+        xmlns="https://jets.iti.gov.eg/xml/weekdays"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jets.iti.gov.eg/xml/weekdays weekDays.xsd">1</weekDays>
